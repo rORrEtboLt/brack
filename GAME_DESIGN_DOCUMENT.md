@@ -33,7 +33,7 @@ The game itself lies to you. The tutorial gives false instructions, the UI is un
 >
 
 ## 7. Asset List (artist's work queue)
-
+Frutiger Aero 
 | Asset | Size (px) | Format | Done |
 |-------|-----------|--------|------|
 | | | PNG | ☐ |
