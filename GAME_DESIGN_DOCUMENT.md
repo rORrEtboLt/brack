@@ -1,7 +1,7 @@
 # Game Design Document
 
-**Jam: Brackeys Game Jam 2026.2 ** | **Theme: Trust no one** | **August 23rd 2026 at 3:30 PM to August 30th 2026 at 3:30 PM**
-**Team:** [Sagittarius — Dev], [56IsAlright — Art], [RoRReT — Dev]
+**Jam: [Brackeys Game Jam 2026.2](https://itch.io/jam/brackeys-16)** | **Theme: Trust no one** | **August 23rd 2026 at 3:30 PM to August 30th 2026 at 3:30 PM**
+**Team:** [Sagittarius — Dev](https://github.com/aavartsharma), 56IsAlright — Art, [RoRReT — Dev](https://github.com/rORrEtboLt)
 
 ## 1. Idea
 
