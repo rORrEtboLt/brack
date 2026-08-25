@@ -6,8 +6,6 @@ const SPEED = 300.0
 @onready var PlayerAnimation = $AnimatedSprite2D
 var facing = "down"
 
-
-
 func _physics_process(_delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

@@ -4,6 +4,7 @@
 **Team:** [Sagittarius — Dev](https://github.com/aavartsharma), 56IsAlright — Art, [RoRReT — Dev](https://github.com/rORrEtboLt), 10sya — Sound 
 
 
+
 ## 1. Idea
 
 The game itself lies to you. The tutorial gives false instructions, the UI is unreliable (health bar shows wrong values, minimap has fake walls), or button prompts are wrong.
