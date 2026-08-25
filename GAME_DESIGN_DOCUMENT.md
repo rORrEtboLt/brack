@@ -3,6 +3,7 @@
 **Jam: [Brackeys Game Jam 2026.2](https://itch.io/jam/brackeys-16)** | **Theme: Trust no one** | **August 23rd 2026 at 3:30 PM to August 30th 2026 at 3:30 PM**
 **Team:** [Sagittarius — Dev](https://github.com/aavartsharma), 56IsAlright — Art, [RoRReT — Dev](https://github.com/rORrEtboLt), 10sya — Sound 
 
+
 ## 1. Idea
 
 The game itself lies to you. The tutorial gives false instructions, the UI is unreliable (health bar shows wrong values, minimap has fake walls), or button prompts are wrong.
