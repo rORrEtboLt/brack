@@ -1,62 +1,60 @@
 [gd_scene format=3 uid="uid://vbwd377fstdm"]
 
-[ext_resource type="Texture2D" uid="uid://ol047oqn6jl0" path="res://art/level1_room.png" id="1_bwv4p"]
+[ext_resource type="Texture2D" uid="uid://c7kwhvwcmr4mw" path="res://art/Level 1 Floor.png" id="1_lrl65"]
+[ext_resource type="Texture2D" uid="uid://pxb1sacki0qe" path="res://art/Level1Objects.png" id="2_76388"]
 [ext_resource type="PackedScene" uid="uid://cnlxntpffo73" path="res://scenes/player.tscn" id="2_odhdn"]
 [ext_resource type="AudioStream" uid="uid://lunuanjo10kl" path="res://audio/backgroundmusic.mp3" id="3_odhdn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hh0s2"]
-size = Vector2(146.25, 20)
+size = Vector2(81.28125, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jqbj0"]
-size = Vector2(244, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgao0"]
-size = Vector2(177.36218, 20)
+size = Vector2(265, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6erf0"]
-size = Vector2(566, 20)
+size = Vector2(410.5, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hm75v"]
-size = Vector2(20, 97)
+size = Vector2(19.5, 406.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oa15u"]
-size = Vector2(20, 196)
+size = Vector2(23, 402.75)
 
 [node name="Level1" type="Node2D" unique_id=466022493]
 
-[node name="Room" type="Sprite2D" parent="." unique_id=714019028]
-scale = Vector2(4, 4)
-texture = ExtResource("1_bwv4p")
+[node name="RoomFloor" type="Sprite2D" parent="." unique_id=818728584]
+scale = Vector2(2, 2)
+texture = ExtResource("1_lrl65")
+centered = false
+
+[node name="RoomObjects" type="Sprite2D" parent="." unique_id=548180133]
+scale = Vector2(2, 2)
+texture = ExtResource("2_76388")
 centered = false
 
 [node name="Player" parent="." unique_id=1419819960 instance=ExtResource("2_odhdn")]
-position = Vector2(200, 100)
+position = Vector2(200, 170)
 
 [node name="Walls" type="StaticBody2D" parent="." unique_id=1996579641]
 
 [node name="WallTopLeft" type="CollisionShape2D" parent="Walls" unique_id=765823031]
-position = Vector2(42.875, 38)
+position = Vector2(37.359375, 114)
 shape = SubResource("RectangleShape2D_hh0s2")
 
 [node name="WallTopRight" type="CollisionShape2D" parent="Walls" unique_id=1114116704]
-position = Vector2(290, 36)
+position = Vector2(256.5, 118)
 shape = SubResource("RectangleShape2D_jqbj0")
 
-[node name="WallRight" type="CollisionShape2D" parent="Walls" unique_id=2135608648]
-position = Vector2(472, 99.99999)
-rotation = -2.3282695
-shape = SubResource("RectangleShape2D_vgao0")
-
 [node name="WallBottom" type="CollisionShape2D" parent="Walls" unique_id=920276423]
-position = Vector2(251, 257)
+position = Vector2(199.75, 394)
 shape = SubResource("RectangleShape2D_6erf0")
 
 [node name="WallRightBottom" type="CollisionShape2D" parent="Walls" unique_id=2122243430]
-position = Vector2(518, 202.5)
+position = Vector2(393, 192.625)
 shape = SubResource("RectangleShape2D_hm75v")
 
 [node name="WallLeft" type="CollisionShape2D" parent="Walls" unique_id=751185796]
-position = Vector2(-10, 145)
+position = Vector2(-12, 202.625)
 shape = SubResource("RectangleShape2D_oa15u")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=993548605]
