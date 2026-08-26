@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://vbwd377fstdm"]
 
-[ext_resource type="Texture2D" uid="uid://ol047oqn6jl0" path="res://art/level1_room.png" id="1_amxg5"]
-[ext_resource type="PackedScene" uid="uid://cnlxntpffo73" path="res://scenes/player.tscn" id="1_kyfjp"]
+[ext_resource type="Texture2D" uid="uid://ol047oqn6jl0" path="res://art/level1_room.png" id="1_bwv4p"]
+[ext_resource type="PackedScene" uid="uid://cnlxntpffo73" path="res://scenes/player.tscn" id="2_odhdn"]
+[ext_resource type="AudioStream" uid="uid://lunuanjo10kl" path="res://audio/backgroundmusic.mp3" id="3_odhdn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hh0s2"]
 size = Vector2(146.25, 20)
@@ -21,14 +22,14 @@ size = Vector2(20, 97)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oa15u"]
 size = Vector2(20, 196)
 
-[node name="TestWorld" type="Node2D" unique_id=466022493]
+[node name="Level1" type="Node2D" unique_id=466022493]
 
 [node name="Room" type="Sprite2D" parent="." unique_id=714019028]
 scale = Vector2(4, 4)
-texture = ExtResource("1_amxg5")
+texture = ExtResource("1_bwv4p")
 centered = false
 
-[node name="Player" parent="." unique_id=1419819960 instance=ExtResource("1_kyfjp")]
+[node name="Player" parent="." unique_id=1419819960 instance=ExtResource("2_odhdn")]
 position = Vector2(200, 100)
 
 [node name="Walls" type="StaticBody2D" parent="." unique_id=1996579641]
@@ -57,3 +58,8 @@ shape = SubResource("RectangleShape2D_hm75v")
 [node name="WallLeft" type="CollisionShape2D" parent="Walls" unique_id=751185796]
 position = Vector2(-10, 145)
 shape = SubResource("RectangleShape2D_oa15u")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=993548605]
+stream = ExtResource("3_odhdn")
+volume_db = -4.0
+autoplay = true

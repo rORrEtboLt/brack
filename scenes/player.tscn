@@ -178,4 +178,3 @@ limit_left = 0
 limit_top = 0
 limit_right = 512
 limit_bottom = 256
-position_smoothing_enabled = true
