@@ -20,6 +20,34 @@ size = Vector2(19.5, 406.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oa15u"]
 size = Vector2(23, 402.75)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_df3c8"]
+size = Vector2(74, 20)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hh0s2"]
+radius = 28.011154
+height = 121.106964
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8y3dw"]
+size = Vector2(40, 66)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgao0"]
+size = Vector2(110.59416, 128.57336)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hh0s2"]
+radius = 41.303753
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jqbj0"]
+radius = 32.695564
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8eox"]
+size = Vector2(92, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1b2fp"]
+size = Vector2(81.692215, 84.60117)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8y3dw"]
+radius = 26.907248
+
 [node name="Level1" type="Node2D" unique_id=466022493]
 
 [node name="RoomFloor" type="Sprite2D" parent="." unique_id=818728584]
@@ -57,7 +85,51 @@ shape = SubResource("RectangleShape2D_hm75v")
 position = Vector2(-12, 202.625)
 shape = SubResource("RectangleShape2D_oa15u")
 
+[node name="DoorUp" type="CollisionShape2D" parent="Walls" unique_id=1824490486]
+position = Vector2(101, 96)
+shape = SubResource("RectangleShape2D_df3c8")
+
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=993548605]
 stream = ExtResource("3_odhdn")
 volume_db = -4.0
 autoplay = true
+
+[node name="Objects" type="StaticBody2D" parent="." unique_id=1976568448]
+
+[node name="Furniture" type="CollisionShape2D" parent="Objects" unique_id=1738451864]
+position = Vector2(197, 223.99998)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_hh0s2")
+
+[node name="Cabinet" type="CollisionShape2D" parent="Objects" unique_id=1905175228]
+position = Vector2(30, 234.99998)
+rotation = 0.23212878
+shape = SubResource("RectangleShape2D_8y3dw")
+
+[node name="Table" type="CollisionShape2D" parent="Objects" unique_id=1027281451]
+position = Vector2(328.5259, 340.07562)
+rotation = 2.7052603
+shape = SubResource("RectangleShape2D_vgao0")
+
+[node name="Light" type="CollisionShape2D" parent="Objects" unique_id=531664252]
+position = Vector2(267, 304)
+shape = SubResource("CircleShape2D_hh0s2")
+
+[node name="ClothCollecter" type="CollisionShape2D" parent="Objects" unique_id=1233319033]
+position = Vector2(32, 135)
+shape = SubResource("CircleShape2D_jqbj0")
+
+[node name="Shelf" type="CollisionShape2D" parent="Objects" unique_id=1686466163]
+position = Vector2(37.000015, 339)
+rotation = 0.58119464
+shape = SubResource("RectangleShape2D_l8eox")
+
+[node name="cot" type="CollisionShape2D" parent="Objects" unique_id=528800194]
+position = Vector2(342.78555, 151.15831)
+rotation = -0.34906584
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_1b2fp")
+
+[node name="Chair" type="CollisionShape2D" parent="Objects" unique_id=1413595303]
+position = Vector2(364, 236)
+shape = SubResource("CircleShape2D_8y3dw")
